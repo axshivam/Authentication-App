@@ -71,13 +71,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(MainActivity.this,"Error Occurred", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this,"Error Occurred!", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+
         tvSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 Intent i= new Intent(MainActivity.this,LoginActivity.class);
                 startActivity(i);
             }

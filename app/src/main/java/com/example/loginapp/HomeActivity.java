@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
 
         logOut.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
                 Intent intoToMain= new Intent(HomeActivity.this,MainActivity.class);
                 startActivity(intoToMain);
